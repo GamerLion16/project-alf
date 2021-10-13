@@ -19,5 +19,18 @@ input.onGesture(Gesture.Shake, function () {
     music.playTone(165, music.beat(BeatFraction.Breve))
 })
 basic.forever(function () {
-	
+    basic.showLeds(`
+        . . . . .
+        # . # . #
+        # # # . #
+        # . # . #
+        . . . . .
+        `)
+    basic.showLeds(`
+        . # . # .
+        . # . # .
+        # . . . #
+        . # # # .
+        . . . . .
+        `)
 })
